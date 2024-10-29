@@ -38,6 +38,12 @@
                             </div>
                             @enderror
 
+                            <select name="categorytype" size="1">
+                             <option value="仕事">仕事</option>
+                             <option value="遊び">遊び</option>
+                             <option value="勉強">勉強</option>
+                             </select>
+
                             <button type="submit"
                                 class="mt-8 p-4 bg-slate-800 text-white w-full max-w-xs hover:bg-slate-900 transition-colors">
                                 追加する
@@ -58,6 +64,9 @@
                                         <th scope="col"
                                             class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900">
                                             タスク</th>
+                                            <th scope="col"
+                                            class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900">
+                                            カテゴリー</th>
                                         <th scope="col" class="relative py-3.5 pl-3 pr-4 sm:pr-6">
                                             <span class="sr-only">Actions</span>
                                         </th>
