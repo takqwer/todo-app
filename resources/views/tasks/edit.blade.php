@@ -26,6 +26,8 @@
                     @csrf
                     @method('PUT')
 
+                    
+
                     <div class="flex flex-col items-center">
                         <label class="w-full max-w-3xl mx-auto">
                             <input
@@ -45,9 +47,9 @@
                                 戻る
                             </a>
                             <select name="categorytype" size="1">
-                             <option value="仕事">仕事</option>
-                             <option value="遊び">遊び</option>
-                             <option value="勉強">勉強</option>
+                             <option value="仕事"@if($task->category=="仕事") selected @endif>仕事</option>
+                             <option value="遊び"@if($task->category=="遊び") selected @endif>遊び</option>
+                             <option value="勉強"@if($task->category=="勉強") selected @endif>勉強</option>
                              </select>
                             <button type="submit"
                                 class="p-4 bg-sky-800 text-white w-full max-w-xs hover:bg-sky-900 transition-colors">
